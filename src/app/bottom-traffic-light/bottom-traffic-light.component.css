@@ -1,0 +1,29 @@
+/* Horizontal */
+
+.traffic-signal {
+  width: 300px;
+  height: 100px;
+  background-color: #333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
