@@ -1,8 +1,8 @@
 <div class="container">
   <div class="traffic-signal">
-    <div class="light red"></div>
-    <div class="light yellow"></div>
-    <div class="light green"></div>
+    <div [ngStyle]="{'background-color': redLightColor}" class="light red"></div>
+    <div [ngStyle]="{'background-color': yellowLightColor}" class="light yellow"></div>
+    <div [ngStyle]="{'background-color': greenLightColor}" class="light green"></div>
   </div>
 </div>
 <button>пресечи</button>
