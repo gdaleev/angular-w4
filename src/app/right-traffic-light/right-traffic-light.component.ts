@@ -55,4 +55,8 @@ export class RightTrafficLightComponent {
       }
     });
   }
+
+  enableCrossTheRoadButton(): boolean {
+    return this.yellowLightColor === 'yellow' || this.greenLightColor === 'green' || (this.redLightColor == "red" && this.yellowLightColor == "yellow");
+  }
 }

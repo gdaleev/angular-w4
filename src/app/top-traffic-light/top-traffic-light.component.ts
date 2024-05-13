@@ -56,4 +56,8 @@ export class TopTrafficLightComponent {
       }
     });
   }
+
+  enableCrossTheRoadButton(): boolean {
+    return this.yellowLightColor === 'yellow' || this.greenLightColor === 'green' || (this.redLightColor == "red" && this.yellowLightColor == "yellow");
+  }
 }

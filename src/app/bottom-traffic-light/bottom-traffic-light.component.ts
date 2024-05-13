@@ -56,4 +56,12 @@ export class BottomTrafficLightComponent {
       }
     });
   }
+
+  isRedLightOn(): boolean {
+    return this.redLightColor === 'red';
+  }
+
+  enableCrossTheRoadButton(): boolean {
+    return this.yellowLightColor === 'yellow' || this.greenLightColor === 'green' || (this.redLightColor == "red" && this.yellowLightColor == "yellow");
+  }
 }

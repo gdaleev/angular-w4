@@ -4,5 +4,5 @@
     <div [ngStyle]="{'background-color': yellowLightColor}" class="light"></div>
     <div [ngStyle]="{'background-color': greenLightColor}" class="light"></div>
   </div>
-  <button>пресечи</button>
+  <button [disabled]="!enableCrossTheRoadButton()">пресечи</button>
 </div>

@@ -1,4 +1,4 @@
-<button>пресечи</button>
+<button [disabled]="!enableCrossTheRoadButton()">пресечи</button>
 <div class="container">
   <div class="traffic-signal">
     <div [ngStyle]="{'background-color': redLightColor}" class="light red"></div>
