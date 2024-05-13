@@ -4,5 +4,8 @@
     <div [ngStyle]="{'background-color': yellowLightColor}" class="light"></div>
     <div [ngStyle]="{'background-color': greenLightColor}" class="light"></div>
   </div>
-  <button [disabled]="!enableCrossTheRoadButton()">пресечи</button>
+  <button (click)="crossingTheRoad()" [disabled]="!enableCrossTheRoadButton()">пресечи</button>
+<div *ngIf="badCrossing">
+  <p class="badCrossingMsg">НЕПРАВИЛНО ПРЕСИЧАНЕ !!!</p>
+</div>
 </div>

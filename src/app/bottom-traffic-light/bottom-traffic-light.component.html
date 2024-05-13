@@ -1,4 +1,7 @@
-<button [disabled]="!enableCrossTheRoadButton()">пресечи</button>
+<button (click)="crossingTheRoad()" [disabled]="!enableCrossTheRoadButton()">пресечи</button>
+<div *ngIf="badCrossing">
+  <p class="badCrossingMsg">НЕПРАВИЛНО ПРЕСИЧАНЕ !!!</p>
+</div>
 <div class="container">
   <div class="traffic-signal">
     <div [ngStyle]="{'background-color': redLightColor}" class="light red"></div>

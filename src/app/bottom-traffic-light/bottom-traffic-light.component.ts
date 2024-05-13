@@ -14,6 +14,7 @@ export class BottomTrafficLightComponent {
   yellowLightColor: string = 'black';
   greenLightColor: string = 'black';
   colorInterval: any;
+  badCrossing: boolean = false;
 
   constructor() {
     this.startColorInterval();
@@ -63,5 +64,14 @@ export class BottomTrafficLightComponent {
 
   enableCrossTheRoadButton(): boolean {
     return this.yellowLightColor === 'yellow' || this.greenLightColor === 'green' || (this.redLightColor == "red" && this.yellowLightColor == "yellow");
+  }
+
+  crossingTheRoad() {
+    if (this.yellowLightColor == "yellow") {
+      this.badCrossing = true;
+      setTimeout(() => {
+        this.badCrossing = false;
+      }, 3000);
+    }
   }
 }
